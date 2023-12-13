@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.container nav {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a99985;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container nav .heading1 {
+  font-size: 1.2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #003049;
+}
+.links {
+  display: flex;
+}
+.links a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: #000814;
+  padding: 8px 10px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+.links a:hover {
+  background-color: black;
+  transition: all ease 0.3s;
+  color: #fff;
+}
+.Home {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4rem;
+}
+.display img {
+  width: 600px;
+  border-radius: 15px;
+  background-blend-mode: screen;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+.text h1 {
+  font-size: 2.7rem;
+  text-transform: capitalize;
+  line-height: normal;
+  letter-spacing: 0.1ex;
+  font-family: "Asap", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.text p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.Aboutus {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Aboutus h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 20px;
+  font-family: "Asap", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.Aboutus .contents {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.picture img {
+  width: 400px;
+  height: 400px;
+  background-blend-mode: screen;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.content {
+  width: 50%;
+}
+.content h2 {
+  font-size: 3dvh;
+  text-transform: capitalize;
+  margin-bottom: 17px;
+  font-family: "Asap", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.content p {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Asap", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.services {
+  display: flex;
+  gap: 90px;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.services h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 700;
+}
+.cards {
+  display: flex;
+  gap: 60px;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 400px;
+  height: 400px;
+}
+.card1 {
+  background-image: url(./actorprofile.jpg);
+  background-size: cover;
+}
+.card1 h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: white;
+  font-size: 45px;
+}
+.card2 {
+  background-image: url(./genreselection.jpg);
+  background-size: cover;
+}
+.card2 h3 {
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 45px;
+  color: rgb(224, 29, 15);
+}
+.card3 {
+  background-image: url(./trailer.jpg);
+  background-size: cover;
+}
+.card3 h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 45px;
+}
+.card4 {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0.322)
+    ),
+    url(./selection.jpg);
+  background-size: cover;
+}
+.card4 h3 {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 0.5rem;
+  color: bisque;
+}
+footer {
+  width: 100%;
+  height: 10vh;
+}
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  .links {
+    display: none;
+  }
+  .contents {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+  .Home {
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+  .display img {
+    width: 300px;
+  }
+  .Aboutus {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .Aboutus .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .picture img {
+    width: 300px;
+    height: 300px;
+  }
+  .services {
+    margin-top: 300px;
+    width: 50%;
+    margin-bottom: 300px;
+  }
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem;
+  }
+  .card {
+    width: 300px;
+    height: 200px;
+  }
+  .card h3 {
+    font-size: 30px;
+  }
+  .footer-row {
+    width: 100%;
+  }
+}
